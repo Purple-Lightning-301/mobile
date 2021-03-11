@@ -572,7 +572,7 @@ body {
 }
 .cards {
   grid-template-rows: 353px;
-  grid-auto-rows: row;
+  grid-auto-rows: 353px;
   grid-auto-columns: 353px;
   grid-row-gap: 10px;
 }
@@ -672,7 +672,7 @@ body {
 }
 
 /* tablet style */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   *{
     padding: 0px;
   }
@@ -823,7 +823,7 @@ body {
 }
 
 /* desktop style */
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body{
     width: 100vw;
     margin: 0px
