@@ -15,210 +15,172 @@
 </head>
 
 <body>
-    <div class="all">
-        <!-- Header -->
-        <div class="header">
-            <div class="mobile-menu flex">
-                <div class="brand flex bg-dark">
-                    <img src="./assets/Dhome-logo.png" alt="Dhome-logo" class="brand-logo">
-                    <h1 class="brand-name">HOMES</h1>
-                </div>
-                <nav class="navbar navbar-dark bg-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
-            </div>
-            <!-- Menu -->
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="fix flex">
-                    <div class="bg-dark fix-menu p-4">
-                        <ul class="list-menu flex">
-                            <li class="menu-item">List your property</li>
-                            <li class="menu-item">Trips</li>
-                            <li class="menu-item">Messages</li>
-                        </ul>
+    <div class="container-all">
+        <div class="all">
+            <!-- Header -->
+            <div class="header">
+                <div class="mobile-menu flex">
+                    <div class="brand flex bg-dark">
+                        <img src="./assets/Dhome-logo.png" alt="Dhome-logo" class="brand-logo">
+                        <h1 class="brand-name">HOMES</h1>
                     </div>
-                    <div class="user bg-dark">
-                        <div class="user-info flex">
-                            <div class="user-avatar flex">
-                                <img src="./assets/user-image.png" alt="user-image" class="user-img">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+                <!-- Menu -->
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="fix flex">
+                        <div class="bg-dark fix-menu p-4">
+                            <ul class="list-menu flex">
+                                <li class="menu-item">List your property</li>
+                                <li class="menu-item">Trips</li>
+                                <li class="menu-item">Messages</li>
+                            </ul>
+                        </div>
+                        <div class="user bg-dark">
+                            <div class="user-info flex">
+                                <div class="user-avatar flex">
+                                    <img src="./assets/user-image.png" alt="user-image" class="user-img">
+                                </div>
+                                <p class="user-name">
+                                    Isla Schoger
+                                </p>
                             </div>
-                            <p class="user-name">
-                                Isla Schoger
-                            </p>
+                            <ul class="account flex">
+                                <li class="account-items">Account settings</li>
+                                <li class="account-items">Support</li>
+                                <li class="account-items">Sign out</li>
+                            </ul>
                         </div>
-                        <ul class="account flex">
-                            <li class="account-items">Account settings</li>
-                            <li class="account-items">Support</li>
-                            <li class="account-items">Sign out</li>
-                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="menu flex">
-                <div class="search-bar">
-                    <form action="" class="search-form">
-                        <div class="input-group p-1">
-                            <div class="input-group-prepend border-0">
-                                <button id="button-addon4" type="button" class="btn btn-link text-info">
-                                    <img src="./assets/search2.png" alt="" class="search-button">
-                                </button>
+                <div class="menu flex">
+                    <div class="search-bar">
+                        <form action="" class="search-form">
+                            <div class="input-group p-1">
+                                <div class="input-group-prepend border-0">
+                                    <button id="button-addon4" type="button" class="btn btn-link text-info">
+                                        <img src="./assets/search2.png" alt="" class="search-button">
+                                    </button>
+                                </div>
+                                <input type="search" placeholder="Search by keywords" aria-describedby="button-addon4"
+                                    class="form-control border-0">
                             </div>
-                            <input type="search" placeholder="Search by keywords" aria-describedby="button-addon4"
-                                class="form-control border-0">
-                        </div>
-                    </form>
-                </div>
-                <div class="filter flex">
-                    <img src="./assets/filter.png" alt="filter-icon" class="filter-icon">
-                    <p class="filter-text">
-                        <a href="#filter-form" data-toggle="collapse" role="button" aria-expanded="false"
-                            aria-controls="filter-form">
-                            Filters
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <div class="collapse" id="filter-form">
-                <div class="fix-1024">
-                    <!-- Filter room -->
-                    <div class="room-option grid">
-                        <div class="bedrooms">
-                            <span>Bedrooms</span>
-                            <select id="bedroom">
-                                <option value="2">2</option>
-                            </select>
-                        </div>
-                        <div class="bathroom">
-                            <span>Bathrooms</span>
-                            <select id="bathroom">
-                                <option value="2">2</option>
-                            </select>
-                        </div>
-                        <!-- Price Filter-->
-                        <div class="price-option">
-                            <span>Price Range</span>
-                            <select id="price-range">
-                                <option class="range" value="range">Up to $2,000 /wk</option>
-                            </select>
-                        </div>
+                        </form>
                     </div>
-                    <div class="rim"></div>
-                    <!-- Filter property-->
-                    <div class="property-option">
-                        <span class="title-option">Property Type</span>
-                        <div class="group-checkbox">
-                            <label class="property-container">House
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="property-container">Apartment
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="property-container">Loft
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="property-container">Townhouse
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
+                    <div class="filter flex">
+                        <img src="./assets/filter.png" alt="filter-icon" class="filter-icon">
+                        <p class="filter-text">
+                            <a href="#filter-form" data-toggle="collapse" role="button" aria-expanded="false"
+                                aria-controls="filter-form">
+                                Filters
+                            </a>
+                        </p>
                     </div>
-                    <div class="rim"></div>
-                    <!-- Amenities -->
-                    <div class="amenities-option">
+                </div>
+                <div class="collapse" id="filter-form">
+                    <div class="fix-1024">
+                        <!-- Filter room -->
+                        <div class="room-option grid">
+                            <div class="bedrooms">
+                                <span>Bedrooms</span>
+                                <select id="bedroom">
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="bathroom">
+                                <span>Bathrooms</span>
+                                <select id="bathroom">
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <!-- Price Filter-->
+                            <div class="price-option">
+                                <span>Price Range</span>
+                                <select id="price-range">
+                                    <option class="range" value="range">Up to $2,000 /wk</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rim"></div>
+                        <!-- Filter property-->
+                        <div class="property-option">
+                            <span class="title-option">Property Type</span>
+                            <div class="group-checkbox">
+                                <label class="property-container">House
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="property-container">Apartment
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="property-container">Loft
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="property-container">Townhouse
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="rim"></div>
+                        <!-- Amenities -->
+                        <div class="amenities-option">
 
-                        <span class="title-option">Amentities</span>
-                        <div class="fix-amenities-1024">
-                        <label class="Amentities-container Amentities-title">Balcony
-                            <input type="checkbox">
-                            <span class="Amentities-checkmark"></span>
-                        </label>
-                        <label class="Amentities-container">Air conditioning
-                            <input type="checkbox">
-                            <span class="Amentities-checkmark"></span>
-                        </label>
-                        <label class="Amentities-container">Pool
-                            <input type="checkbox">
-                            <span class="Amentities-checkmark"></span>
-                        </label>
-                        <label class="Amentities-container">Beach
-                            <input type="checkbox">
-                            <span class="Amentities-checkmark"></span>
-                        </label>
-                        <label class="Amentities-container">Pet friendly
-                            <input type="checkbox">
-                            <span class="Amentities-checkmark"></span>
-                        </label>
-                        <label class="Amentities-container">Kid friendly
-                            <input type="checkbox">
-                            <span class="Amentities-checkmark"></span>
-                        </label>
+                            <span class="title-option">Amentities</span>
+                            <div class="fix-amenities-1024">
+                                <label class="Amentities-container Amentities-title">Balcony
+                                    <input type="checkbox">
+                                    <span class="Amentities-checkmark"></span>
+                                </label>
+                                <label class="Amentities-container">Air conditioning
+                                    <input type="checkbox">
+                                    <span class="Amentities-checkmark"></span>
+                                </label>
+                                <label class="Amentities-container">Pool
+                                    <input type="checkbox">
+                                    <span class="Amentities-checkmark"></span>
+                                </label>
+                                <label class="Amentities-container">Beach
+                                    <input type="checkbox">
+                                    <span class="Amentities-checkmark"></span>
+                                </label>
+                                <label class="Amentities-container">Pet friendly
+                                    <input type="checkbox">
+                                    <span class="Amentities-checkmark"></span>
+                                </label>
+                                <label class="Amentities-container">Kid friendly
+                                    <input type="checkbox">
+                                    <span class="Amentities-checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
                     </div>
+                    <div class="rim"></div>
+                    <div class="update-field">
+                        <button class="update-button">
+                            Update result
+                        </button>
                     </div>
-                </div>
-                <div class="rim"></div>
-                <div class="update-field">
-                    <button class="update-button">
-                        Update result
-                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Main -->
-    <div class="main grid">
-        <!--Main content-->
-        <div class="main-content">
-            <!-- City -->
-            <div class="general-info">
-                <h3 class="city">Los Angeles</h3>
-                <p class="city-introduce">
-                    Live like the stars in these luxurious Southern California estates.
-                </p>
-            </div>
-            <!--cards-->
-            <div class="cards grid">
-                <div class="card">
-                    <img src="./assets/home1.png" alt="a-house" class="home-image">
-                    <div class="card-info">
-                        <span class="plus">PLUS</span>
-                        <span class="status">3 BEDS • 2 BATHS</span>
-                        <p class="title">Modern home in city center</p>
-                        <p class="price">$1,400 /wk</p>
-                        <img src="./assets/star.png" alt="review" class="star">
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/home2.png" alt="a-house" class="home-image">
-                    <div class="card-info">
-                        <span class="status no-p">3 BEDS • 2 BATHS</span>
-                        <p class="title">Isolated house outside of...</p>
-                        <p class="price">$1,400 /wk</p>
-                        <img src="./assets/star.png" alt="review" class="star no-p">
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/home2.png" alt="a-house" class="home-image">
-                    <div class="card-info">
-                        <span class="status no-p">3 BEDS • 2 BATHS</span>
-                        <p class="title">Isolated house outside of...</p>
-                        <p class="price">$1,400 /wk</p>
-                        <img src="./assets/star.png" alt="review" class="star no-p">
-                    </div>
-                </div>
-            </div>
+        <!-- Main -->
+        <div class="main grid">
+            <!--Main content-->
             <div class="main-content">
                 <!-- City -->
                 <div class="general-info">
-                    <h3 class="city">Phoenix</h3>
+                    <h3 class="city">Los Angeles</h3>
                     <p class="city-introduce">
-                        Escape the cold and enjoy great weather without breaking the bank.
+                        Live like the stars in these luxurious Southern California estates.
                     </p>
                 </div>
                 <!--cards-->
@@ -252,8 +214,48 @@
                         </div>
                     </div>
                 </div>
+                <div class="main-content">
+                    <!-- City -->
+                    <div class="general-info">
+                        <h3 class="city">Phoenix</h3>
+                        <p class="city-introduce">
+                            Escape the cold and enjoy great weather without breaking the bank.
+                        </p>
+                    </div>
+                    <!--cards-->
+                    <div class="cards grid">
+                        <div class="card">
+                            <img src="./assets/home1.png" alt="a-house" class="home-image">
+                            <div class="card-info">
+                                <span class="plus">PLUS</span>
+                                <span class="status">3 BEDS • 2 BATHS</span>
+                                <p class="title">Modern home in city center</p>
+                                <p class="price">$1,400 /wk</p>
+                                <img src="./assets/star.png" alt="review" class="star">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/home2.png" alt="a-house" class="home-image">
+                            <div class="card-info">
+                                <span class="status no-p">3 BEDS • 2 BATHS</span>
+                                <p class="title">Isolated house outside of...</p>
+                                <p class="price">$1,400 /wk</p>
+                                <img src="./assets/star.png" alt="review" class="star no-p">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/home2.png" alt="a-house" class="home-image">
+                            <div class="card-info">
+                                <span class="status no-p">3 BEDS • 2 BATHS</span>
+                                <p class="title">Isolated house outside of...</p>
+                                <p class="price">$1,400 /wk</p>
+                                <img src="./assets/star.png" alt="review" class="star no-p">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
